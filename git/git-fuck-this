@@ -1,0 +1,6 @@
+#!/bin/sh
+
+git checkout -- .
+git status -s | cut -d ' ' -f 2 | xargs rm -rf
+
+cat ~/.spells/art/fma.ascii
